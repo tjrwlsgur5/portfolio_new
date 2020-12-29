@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+*{box-sizing: border-box; text-decoration: none; color: #000; user-select: none;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration: none}
+.screen_out{
+	display:none;
+	visibility:hidden;
+	opacity:0;
+	text-indent:-999999px;
+	font-size:0;
+	/*white-space: nowrap;(줄바꿈 안되게 설정)
+	overflow:hidden;(넘치는 글자 보이지 않게)
+	text-overflow: ellipsis(밑줄임표로 처리)*/
+}
+@font-face{
+	font-family: 'nb';
+	src: url("../../font_family/NanumBarunGothic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: 'nbb';
+	src: url("../../font_family/NanumBarunGothicBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+.josefin_Sans{font-family: 'Josefin Sans', sans-serif;} /* 로고체 링크 = <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet"> */
+.font_hyeon{font-family: 'nbb', sans-serif;} /* 제목체 */
+.font_pen{font-family: 'nb', sans-serif;} /* 기본글체 */

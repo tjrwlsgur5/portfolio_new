@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avenir 회원가입</title>
+    <link rel="stylesheet" href="../css/Reset.css" type="text/css">
+    <link rel="stylesheet" href="css/signup.css" type="text/css">
+	<link rel="stylesheet" href="css/popUp.css" type="text/css">
+</head>
+<body>
+    <div id="signup_wrap">
+        <section id="signup_main">
+            <h1><a href="#">Avenir</a></h1>
+            <section id="signup" class="section_size">
+                <form action="/signup" method="post" name="signup_form" id="signup_form" onSubmit="return signUp(this);"><!-- /signup -->
+                    <fieldset>
+                        <legend>회원가입</legend>
+                        <p> 
+                            <label>
+                                <input type="text" name="user_id" id="user_id" class="focus_on" placeholder="아이디" maxlength="16"><span>아이디 입력</span>
+                            </label>
+							<button type="button" value="아이디중복확인" id="id_overlap_but">아이디중복확인</button><input type="checkbox" id="id_overlap" name="id_overlap">
+                        </p>
+                        <p id="id_alert">8~16자의 영문 대소문자와 숫자로만 입력하세요.</p>
+                        <label><input type="password" name="user_pw" id="user_pw" class="focus_on" placeholder="비밀번호" maxlength="16"><span>비밀번호 입력</span></label>
+                        <p id="pw_alert">8~16자의 영문 대소문자와 숫자로만 입력하세요.</p>
+                        <label><input type="password" name="user_pwcheck" id="user_pwcheck" class="focus_on" placeholder="비밀번호" maxlength="16"><span>비밀번호 확인</span></label>
+                        <p id="pwcheck_alert"></p>
+                        <label><input type="text" name="user_name" id="user_name" class="focus_on" placeholder="이름"><span>이름 입력</span></label>
+                        <p id="name_alert"></p>
+                        <label><input type="email" name="user_email" id="user_email" class="focus_on" placeholder="이메일"><span>이메일 입력</span></label>
+                        <p id="email_alert"></p>
+                        <label><input type="number" name="user_phonenum" id="user_phonenum" class="focus_on" placeholder="전화번호" maxlength="18"><span>전화번호 입력</span></label>
+                        <p id="number_alert"></p>
+                        <p class="checkboxform">
+                            <label><input type="radio" name="usertype" value="기업" class="radiobox">회사</label>
+                            <label><input type="radio" name="usertype" value="개인" class="radiobox">개인</label>
+                        </p>
+                        <p class="checkboxform"> 
+                            <label><input type="checkbox" name="agree" value="동의함" id="agree"><a href="#" id="pup_on">개인정보 수집 이용동의</a></label>
+                         </p>
+                        <input type="submit" name="submit" value="회원가입">
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+		<div id="pop-up">
+			<div class="font_pen">
+				<h3 class="font_hyeon">개인정보 수집이용 동의</h3>
+				<p>Avenir는 서비스 제공에 필요한 최소한의 개인정보를 수집ㆍ이용합니다.</p>
+				<h5 class="font_hyeon">&lt;개인정보의 수집ㆍ이용목적&gt;</h5>
+				<p>리커너스는 다음과 같은 목적을 위하여 개인정보를 수집하고 있습니다.</p>
+				<h5 class="font_hyeon">&lt;문의에 대한 답변&gt;</h5>
+				<p>기타 서비스 정보 제공</p>
+				<h5 class="font_hyeon">&lt;수집항목&gt;</h5>
+				<p>Avenir는 아래와 같은 개인정보를 수집하고 있습니다.<br>
+					· 필수항목 : 회사명, 이름, 이메일, 전화번호<br>
+					· 선택항목 : 예산, 파일첨부, 프로젝트 설명<br>
+					이용기간<br>
+					개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.<br>
+					단, 관련 법의 규정 및 내부 방침에 의해 일정기간 보유해야 할 필요가 있을 경우 개인정보를 보관할 수 있습니다.<br>
+				</p>
+				<button id="pup_off">확인 후 닫기</button>
+			</div>
+		</div>
+    </div>
+	<script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/popUp.js"></script>
+</body>
+</html>

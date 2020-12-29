@@ -1,0 +1,176 @@
+#signup_wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color:#222;
+    position: absolute;
+}
+#signup_main{
+    width: 650px;
+    height: 900px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 150px 10px 10px;
+    position: absolute;
+    box-sizing: border-box;
+}
+#signup_wrap h1 a{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #0f4c81;
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#signup_wrap fieldset{
+    width: 550px;
+    margin: 0 auto;
+}
+#signup_wrap legend {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-family: 'nbb', sans-serif;
+}
+#signup_wrap input[type=text],
+#signup_wrap input[type=password],
+#signup_wrap input[type=number],
+#signup_wrap input[type=email]{
+	outline: none;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding-left: 20px;
+    color: #222222;
+    font-size: 15px; 
+    line-height: 48px;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    border-radius: 5px;
+    font-family: 'nbb', sans-serif;
+}
+#signup_wrap input[name=user_id]{
+    width: 430px;
+}
+#signup_wrap input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}   
+#signup_wrap label+button{
+    width: 105px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0f4c81;
+    font-size: 14px;
+    font-weight: 30;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: 'nb', sans-serif;
+    float: right;
+	outline: none;
+}
+#signup_wrap button+input[type=checkbox]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#signup_wrap fieldset>p:not(:nth-child(2)){
+    display: block;
+/*    width: 350px;*/
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-left: 35px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'nb', sans-serif;
+}
+#signup_wrap fieldset p:nth-last-child(2){
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+}
+#signup_wrap .focus_on:focus{
+   	outline: none;
+    border: 3px solid #0f4c81;
+}
+#signup_wrap input+span{
+    color: #0f4c81;
+    background-color: white;
+    padding: 5px;
+    font-weight: 700;
+    position: absolute;
+    left: 55px;
+    display: none;
+    font-family: 'nbb', sans-serif;
+}
+#signup_wrap .focus_on:focus+span{display: block;}
+#signup_wrap input:focus::placeholder{
+    color: transparent;
+}
+#signup_wrap p label:nth-of-type(1) input+span {
+    top: 140px;
+}
+#signup_wrap label:nth-of-type(1) input+span {
+    top: 235px;
+}
+#signup_wrap label:nth-of-type(2) input+span {
+    top: 330px;
+}
+#signup_wrap label:nth-of-type(3) input+span {
+    top: 425px;
+}
+#signup_wrap label:nth-of-type(4) input+span {
+    top: 520px;
+}
+#signup_wrap label:nth-of-type(5) input+span {
+    top: 615px;
+}
+
+#signup_wrap #signup_main fieldset>.checkboxform{
+    width: 500px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+}
+.checkboxform label{
+    display: inline-block;
+    width: 200px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 30px;
+}
+#signup_wrap .checkboxform input{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-top: -1px;
+}
+#signup_wrap fieldset>input[type=submit]{
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    right: 50px;
+	bottom: 50px;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0f4c81;
+    font-size: 20px;
+    font-weight: 30;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: 'nb', sans-serif;
+	outline: none;
+}

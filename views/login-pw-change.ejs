@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avenir 비밀번호 변경</title>
+    <link rel="stylesheet" href="../public/css/Reset.css">
+    <link rel="stylesheet" href="../public/contents/css/login.css">
+</head>
+<body>
+    <div id="login_wrap">
+        <h1><a href="#">Avenir</a></h1>
+        <section id="login_main">
+            <section id="login_pw_change" class="section_size">
+                <form action="resavepw" method="post">
+                    <fieldset>
+                        <legend>비밀번호 변경</legend>
+                        <input type="hidden" name="id" value="<%=id%>">
+                        <label><input type="password" name="password" class="focus_on" placeholder="비밀번호"><span>비밀번호 입력</span></label>
+                            <p class="p_font_size">영문대소문자, 숫자, 기호를 조합하여 <br>8자 이상을 사용해주세요.</p>
+                        <label><input type="password" name="passwordcheck" class="focus_on" placeholder="비밀번호 확인"><span>비민번호 재입력</span></label>
+                            <p class="p_font_size">비밀번호가 일치하지 않습니다.</p>
+                        <input id="but_pw_change_next" type="submit" value="확인">
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </div>
+    <script src="../public/contents/js/jquery-3.5.1.min.js"></script>
+    <script src="../public/contents/js/login.js"></script>
+</body>
+</html>

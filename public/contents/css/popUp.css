@@ -1,0 +1,45 @@
+#pop-up{
+	width: 100vw;
+	height: 100vh;
+	color: white; 
+	background-color: rgba(34,34,34,0.95);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#pop-up div{
+	width: 350px;
+	height: 500px;
+	background-color: white;
+	padding: 0 30px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%)
+}
+#pop-up h3{
+	font-size: 18px;
+	line-height: 60px;
+	text-align: center;
+}
+#pop-up h5{
+	font-size: 16px;
+	line-height: 35px;
+}
+#pop-up #pup_off{
+	border: 0;
+	padding: 0;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0f4c81;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform:translateX(-50%);
+	outline: 0;
+}
